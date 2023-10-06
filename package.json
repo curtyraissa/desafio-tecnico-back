@@ -2,9 +2,12 @@
   "name": "desafio-tecnico-back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/src/index.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,7 @@
   "dependencies": {
     "@faker-js/faker": "^8.1.0",
     "@prisma/client": "^5.4.1",
+    "@types/joi": "^17.2.3",
     "@types/supertest": "^2.0.14",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
@@ -37,6 +41,7 @@
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
     "http-status": "^1.7.0",
-    "joi": "^17.11.0"
+    "joi": "^17.11.0",
+    "prisma": "^5.4.1"
   }
 }
